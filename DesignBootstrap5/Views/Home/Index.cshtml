@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col">
+        <form asp-action="Index" method="post">
+            <table>
+                <tr>
+                    <td>UserName/Email:</td>
+                    <td><input type="text" required /></td>
+
+                </tr>
+                
+                <tr>
+                     <td>Password:</td>
+                    <td><input type="password" /></td>
+
+                </tr>
+               
+                <tr>
+                    <td><a asp-action="Register">Register</a></td>
+                    <td><button type="submit">Login</button></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+ </div>

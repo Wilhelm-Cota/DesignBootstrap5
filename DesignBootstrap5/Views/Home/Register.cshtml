@@ -1,0 +1,63 @@
+﻿@model DesignBootstrap5.Models.UserRegistration
+
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col">
+        <form asp-action="Register" method="post">
+            <table>
+                <tr>
+                    <td>User Name:</td>
+                    <td><input type="text" required placeholder="User Name" /></td>
+
+                </tr>
+                <tr>
+                    <td>First Name::</td>
+                    <td><input type="text" required placeholder="First Name" /></td>
+
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" required placeholder="Last Name" /></td>
+
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="email" required placeholder="Email" /></td>
+
+                </tr>
+                <tr>
+                     <td>Password:</td>
+                    <td><input type="password" required placeholder="Password" /></td>
+
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td><input type="text" required placeholder="Gender" /></td>
+
+                </tr>
+                <tr>
+                    <td>Age:</td>
+                    <td><input type="number" required placeholder="Age" /></td>
+
+                </tr>
+                <tr>
+                    <td>Department:</td>
+                    <td><input type="text" required placeholder="Department" /></td>
+
+                </tr>
+                <tr>
+                    <td>Role</td>
+                    <td><input type="text" required placeholder="Role" /></td>
+
+                </tr>
+                <tr>
+                    <td><a asp-action="Index">Login</a></td>
+                    <td><button type="submit">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
